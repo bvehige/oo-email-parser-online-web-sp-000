@@ -13,7 +13,8 @@ end
 
 def parse
   array = @emails.split(/[,\s]/).uniq
-  array.reject!{|element|element.empty
+  array.reject!{|element|element.empty?}
+  array
 end
   
   
